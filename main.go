@@ -40,7 +40,7 @@ func main() {
 	assignment01bca.DisplayBlocks(blockchain)
 
 	// Attempt to modify a block's transaction (Simulating an invalid blockchain)
-	 /*modifiedBlockIndex := 2
+	/* modifiedBlockIndex := 2
 	modifiedTransaction := "Modified Transaction"
 	assignment01bca.ChangeBlock(blockchain[modifiedBlockIndex], modifiedTransaction)
 	fmt.Printf("Modifications made at Block %d: The modification made was: %s\n", modifiedBlockIndex, modifiedTransaction)

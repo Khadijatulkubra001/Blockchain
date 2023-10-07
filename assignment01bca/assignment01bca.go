@@ -8,10 +8,10 @@ import (
 
 // Block represents a single block in the blockchain.
 type Block struct {
-	Transaction  string
-	Nonce        int
-	PreviousHash string
-	CurrentHash  string
+	Transaction   string
+	Nonce         int
+	PreviousHash  string
+	CurrentHash   string
 }
 
 // NewBlock adds a new block to the blockchain with the given transaction, nonce, and previous hash.
@@ -41,7 +41,7 @@ func DisplayBlocks(blocks []*Block) {
 }
 
 // ChangeBlockTransaction updates the transaction of a given block.
-func ChangeBlock(block *Block, newTransaction string) {
+func ChangeBlock(block *Block, newTransaction string){
 
 	// Save the original hash for later comparison
 	originalHash := block.CurrentHash
@@ -54,6 +54,7 @@ func ChangeBlock(block *Block, newTransaction string) {
 		fmt.Printf("Error: Invalid transaction in Block: %s\n", newTransaction)
 	}
 }
+
 
 // VerifyChain verifies the integrity of the blockchain in case any changes are made.
 func VerifyChain(blocks []*Block) bool {
